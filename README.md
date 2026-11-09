@@ -85,6 +85,6 @@ To push this repository to GitHub and get a live free website URL:
 
 - **Phone**: [+91 925183000](tel:925183000)
 - **WhatsApp**: [Chat with Shivam](https://wa.me/91925183000)
-- **Email**: [shivamhanda27@gmail.com](mailto:shivamhanda27@gmail.com)
+- **Email**: [shivamhanda277@gmail.com](mailto:shivamhanda277@gmail.com)
 - **Institution**: Chitkara University, Punjab, India
 - **Program**: B.Tech Computer Science & Engineering (Specialization: AI & ML, 1st Year)

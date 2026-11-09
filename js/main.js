@@ -278,7 +278,7 @@ function initContactActions() {
       const message = document.getElementById('formMessage').value;
 
       // Construct mailto link
-      const mailtoLink = `mailto:shivamhanda27@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Shivam,\n\nMy name is ${name} (${email}).\n\n${message}`)}`;
+      const mailtoLink = `mailto:shivamhanda277@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Shivam,\n\nMy name is ${name} (${email}).\n\n${message}`)}`;
 
       // Show toast
       showToast('🚀 Opening email draft to connect with Shivam!');

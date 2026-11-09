@@ -55,12 +55,12 @@ Currently leveraging and experimenting with <span class="term-green">Wispr Flow<
 • Direct Phone: <a href="tel:925183000" class="term-green" style="text-decoration: underline;">+91 925183000</a>
 • WhatsApp: <a href="https://wa.me/91925183000" target="_blank" class="term-green" style="text-decoration: underline;">Chat on WhatsApp (+91 925183000)</a>
 • Location: Chitkara University (CSE AI & ML), Punjab / India
-• Email: <a href="mailto:shivamhanda27@gmail.com" class="term-green" style="text-decoration: underline;">shivamhanda27@gmail.com</a>
+• Email: <a href="mailto:shivamhanda277@gmail.com" class="term-green" style="text-decoration: underline;">shivamhanda277@gmail.com</a>
 `,
     'sudo hire': () => `
 <div style="color: #F59E0B; font-weight: bold;">[ACCESS GRANTED] Authorization Level: Sudo</div>
 <div class="term-green">🚀 Match Found! Shivam brings relentless energy, foundational AI skills, and rapid learning ability.</div>
-<div class="term-accent">Call Shivam immediately at +91 925183000 or email shivamhanda27@gmail.com!</div>
+<div class="term-accent">Call Shivam immediately at +91 925183000 or email shivamhanda277@gmail.com!</div>
 `,
     hire: () => `
 <div class="term-muted">Tip: Try running 'sudo hire' for root recruiter privilege! 😉</div>
