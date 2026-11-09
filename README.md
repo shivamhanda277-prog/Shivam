@@ -1,6 +1,6 @@
 # 🚀 Shivam's Personal Developer Portfolio
 
-> **B.Tech CSE 1st Year @ Chitkara University (AIEL) | Microsoft AI-901 Certified**  
+> **B.Tech CSE (AI & ML) 1st Year @ Chitkara University | Microsoft AI-901 Certified**  
 > An ultra-modern, high-performance portfolio featuring interactive neural particle canvas, dark/light theme switching, 3D tilt perspective cards, and an interactive developer shell.
 
 ---
@@ -11,7 +11,7 @@
 - 🌌 **Neural Constellation Particle Engine**: Interactive HTML5 Canvas background that reacts dynamically to cursor movements and theme shifts at 60 FPS.
 - 🎓 **Microsoft AI-901 Certification Showcase**: Dedicated spotlight for the *Microsoft Certified: Azure AI Fundamentals* credential with vector preview, credential ID copy tool, and interactive modal inspection.
 - 🎙️ **Wispr Flow Integration**: Spotlight on voice-driven productivity tools, modern developer workflows, and cutting-edge experimentation.
-- 💻 **Interactive Unix Terminal**: Embedded shell (`shivam@chitkara-aiel:~$`) supporting interactive commands (`help`, `about`, `skills`, `cert`, `wispr`, `contact`, `sudo hire`, etc.).
+- 💻 **Interactive Unix Terminal**: Embedded shell (`shivam@chitkara-aiml:~$`) supporting interactive commands (`help`, `about`, `skills`, `cert`, `wispr`, `contact`, `sudo hire`, etc.).
 - 📱 **Direct Contact Hub**: One-click actions for Direct Phone Call (`+91 925183000`), WhatsApp chat, email compose, and instant clipboard copy with floating toasts.
 - ⚡ **Zero Build Step / 100% Native**: Built with modern semantic HTML5, CSS3 Custom Properties, and ES6+ JavaScript. No bulky `node_modules`—instant load times and 100 Lighthouse performance score.
 
@@ -85,5 +85,6 @@ To push this repository to GitHub and get a live free website URL:
 
 - **Phone**: [+91 925183000](tel:925183000)
 - **WhatsApp**: [Chat with Shivam](https://wa.me/91925183000)
-- **Institution**: Chitkara University (AIEL), Punjab, India
-- **Program**: B.Tech Computer Science & Engineering (1st Year)
+- **Email**: [shivamhanda27@gmail.com](mailto:shivamhanda27@gmail.com)
+- **Institution**: Chitkara University, Punjab, India
+- **Program**: B.Tech Computer Science & Engineering (Specialization: AI & ML, 1st Year)

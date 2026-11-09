@@ -1,6 +1,6 @@
 /**
  * Shivam's Portfolio - Main Orchestrator Script
- * B.Tech CSE 1st Year @ Chitkara University (AIEL) | Microsoft AI-901 Certified
+ * B.Tech CSE (AI & ML) @ Chitkara University | Microsoft AI-901 Certified
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -73,7 +73,7 @@ function initTypewriter() {
   if (!target) return;
 
   const roles = [
-    'B.Tech CSE 1st Year @ Chitkara AIEL',
+    'B.Tech CSE (AI & ML) @ Chitkara University',
     'Microsoft Certified: Azure AI (AI-901)',
     'Wispr Flow & AI Explorer',
     'Passionate Builder & Rapid Learner',
@@ -278,7 +278,7 @@ function initContactActions() {
       const message = document.getElementById('formMessage').value;
 
       // Construct mailto link
-      const mailtoLink = `mailto:shivam.chitkara.aiel@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Shivam,\n\nMy name is ${name} (${email}).\n\n${message}`)}`;
+      const mailtoLink = `mailto:shivamhanda27@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Shivam,\n\nMy name is ${name} (${email}).\n\n${message}`)}`;
 
       // Show toast
       showToast('🚀 Opening email draft to connect with Shivam!');

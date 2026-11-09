@@ -14,7 +14,7 @@
   const commands = {
     help: () => `
 <div class="term-accent">Available Commands:</div>
-  <span class="term-green">about</span>     - Learn about Shivam & Chitkara University AIEL
+  <span class="term-green">about</span>     - Learn about Shivam & Chitkara University (AI & ML)
   <span class="term-green">skills</span>    - View technical arsenal & tools
   <span class="term-green">cert</span>      - Microsoft Azure AI-901 certification details
   <span class="term-green">wispr</span>     - Info on Wispr Flow productivity workflow
@@ -26,9 +26,9 @@
     about: () => `
 <div class="term-accent">🧑‍💻 Developer Profile:</div>
 Name: <span class="term-green">Shivam</span>
-Status: <span class="term-green">B.Tech Computer Science & Engineering (1st Year)</span>
-Institution: <span class="term-green">Chitkara University (AIEL)</span>
-Focus: Artificial Intelligence, Rapid Prototyping, Modern Software Architecture
+Status: <span class="term-green">B.Tech Computer Science & Engineering - AI & ML (1st Year)</span>
+Institution: <span class="term-green">Chitkara University</span>
+Focus: Artificial Intelligence & Machine Learning, Wispr Flow, Rapid Prototyping
 Philosophy: "Relentless curiosity + execution = real impact."
 `,
     skills: () => `
@@ -54,20 +54,20 @@ Currently leveraging and experimenting with <span class="term-green">Wispr Flow<
 <div class="term-accent">📬 Direct Contact Channels:</div>
 • Direct Phone: <a href="tel:925183000" class="term-green" style="text-decoration: underline;">+91 925183000</a>
 • WhatsApp: <a href="https://wa.me/91925183000" target="_blank" class="term-green" style="text-decoration: underline;">Chat on WhatsApp (+91 925183000)</a>
-• Location: Chitkara University AIEL, Punjab / India
-• Email: Direct connect via contact form below
+• Location: Chitkara University (CSE AI & ML), Punjab / India
+• Email: <a href="mailto:shivamhanda27@gmail.com" class="term-green" style="text-decoration: underline;">shivamhanda27@gmail.com</a>
 `,
     'sudo hire': () => `
 <div style="color: #F59E0B; font-weight: bold;">[ACCESS GRANTED] Authorization Level: Sudo</div>
 <div class="term-green">🚀 Match Found! Shivam brings relentless energy, foundational AI skills, and rapid learning ability.</div>
-<div class="term-accent">Call Shivam immediately at +91 925183000 or scroll down to the Contact form!</div>
+<div class="term-accent">Call Shivam immediately at +91 925183000 or email shivamhanda27@gmail.com!</div>
 `,
     hire: () => `
 <div class="term-muted">Tip: Try running 'sudo hire' for root recruiter privilege! 😉</div>
 `,
     date: () => `
 <div class="term-green">🕒 ${new Date().toLocaleString('en-US', { timeZoneName: 'short' })}</div>
-<div class="term-muted">Academic Term: B.Tech CSE Year 1 • Chitkara University AIEL</div>
+<div class="term-muted">Academic Term: B.Tech CSE (AI & ML) Year 1 • Chitkara University</div>
 `,
     clear: () => {
       terminalOutput.innerHTML = '';
