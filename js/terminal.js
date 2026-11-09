@@ -18,6 +18,7 @@
   <span class="term-green">skills</span>    - View technical arsenal & tools
   <span class="term-green">cert</span>      - Microsoft Azure AI-901 certification details
   <span class="term-green">wispr</span>     - Info on Wispr Flow productivity workflow
+  <span class="term-green">repo</span>      - View official GitHub repository link
   <span class="term-green">contact</span>   - Get direct phone number, email & links
   <span class="term-green">clear</span>     - Clear terminal screen
   <span class="term-green">sudo hire</span> - Executive recruit authorization
@@ -49,6 +50,11 @@ Status: <span class="term-green">Active & Authenticated</span>
     wispr: () => `
 <div class="term-accent">🎙️ Wispr Flow Exploration:</div>
 Currently leveraging and experimenting with <span class="term-green">Wispr Flow</span> for lightning-fast voice-driven development, frictionless prompt structuring, and multimodal workflow automation.
+`,
+    repo: () => `
+<div class="term-accent">📂 GitHub Repository:</div>
+URL: <a href="https://github.com/shivamhanda277-prog/Shivam" target="_blank" class="term-green" style="text-decoration: underline;">https://github.com/shivamhanda277-prog/Shivam</a>
+Live Pages: <a href="https://shivamhanda277-prog.github.io/Shivam/" target="_blank" class="term-green" style="text-decoration: underline;">https://shivamhanda277-prog.github.io/Shivam/</a>
 `,
     contact: () => `
 <div class="term-accent">📬 Direct Contact Channels:</div>

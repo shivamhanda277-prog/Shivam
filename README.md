@@ -69,15 +69,16 @@ To push this repository to GitHub and get a live free website URL:
 3. **Link and Push**:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/<your-username>/portfolio.git
+   git remote add origin https://github.com/shivamhanda277-prog/Shivam.git
    git push -u origin main
    ```
 
 4. **Turn on GitHub Pages**:
-   - Go to your repository on GitHub.
+   - Go to your repository on GitHub: `https://github.com/shivamhanda277-prog/Shivam`
    - Navigate to **Settings** → **Pages**.
    - Under **Branch**, select `main` and root `/`, then click **Save**.
-   - Your portfolio will be live at `https://<your-username>.github.io/portfolio/`!
+   - Your portfolio will be live at:
+     **`https://shivamhanda277-prog.github.io/Shivam/`**
 
 ---
 
@@ -86,5 +87,7 @@ To push this repository to GitHub and get a live free website URL:
 - **Phone**: [+91 925183000](tel:925183000)
 - **WhatsApp**: [Chat with Shivam](https://wa.me/91925183000)
 - **Email**: [shivamhanda277@gmail.com](mailto:shivamhanda277@gmail.com)
+- **GitHub**: [shivamhanda277-prog](https://github.com/shivamhanda277-prog)
+- **Repository**: [shivamhanda277-prog/Shivam](https://github.com/shivamhanda277-prog/Shivam)
 - **Institution**: Chitkara University, Punjab, India
 - **Program**: B.Tech Computer Science & Engineering (Specialization: AI & ML, 1st Year)
