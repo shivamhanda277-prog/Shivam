@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="40%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078D4"/>
+      <stop offset="30%" stop-color="#6366F1"/>
+      <stop offset="70%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Microsoft Azure Blue Gradient -->
+    <linearGradient id="msAzureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078D4"/>
+      <stop offset="100%" stop-color="#00BCF2"/>
+    </linearGradient>
+
+    <!-- Gold Seal Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <filter id="badgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Certificate Border Outer Container -->
+  <rect x="12" y="12" width="776" height="496" rx="20" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2.5"/>
+  
+  <!-- Inner Delicate Guilloche-style Frame -->
+  <rect x="28" y="28" width="744" height="464" rx="14" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  
+  <!-- Subtle Grid Pattern in Background -->
+  <g opacity="0.06">
+    <path d="M 40,80 L 760,80 M 40,140 L 760,140 M 40,200 L 760,200 M 40,260 L 760,260 M 40,320 L 760,320 M 40,380 L 760,380 M 40,440 L 760,440" stroke="#00BCF2" stroke-width="0.8"/>
+    <path d="M 120,40 L 120,480 M 240,40 L 240,480 M 360,40 L 360,480 M 480,40 L 480,480 M 600,40 L 600,480 M 720,40 L 720,480" stroke="#00BCF2" stroke-width="0.8"/>
+  </g>
+
+  <!-- Top Microsoft Logo and Header -->
+  <g transform="translate(60, 52)">
+    <!-- Microsoft 4-Color Squares -->
+    <rect x="0" y="0" width="13" height="13" fill="#F25022"/>
+    <rect x="16" y="0" width="13" height="13" fill="#7FBA00"/>
+    <rect x="0" y="16" width="13" height="13" fill="#00A4EF"/>
+    <rect x="16" y="16" width="13" height="13" fill="#FFB900"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" letter-spacing="1.5">Microsoft Certified</text>
+  </g>
+
+  <!-- Status / Verification Pill -->
+  <g transform="translate(570, 52)">
+    <rect x="0" y="0" width="165" height="32" rx="16" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="4.5" fill="#10B981" filter="url(#badgeGlow)"/>
+    <text x="30" y="20.5" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" letter-spacing="0.5">VERIFIED CREDENTIAL</text>
+  </g>
+
+  <!-- Main Body Content -->
+  <!-- Certificate Title -->
+  <text x="400" y="148" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="500" letter-spacing="3">OFFICIAL CERTIFICATION OF ACHIEVEMENT</text>
+  
+  <text x="400" y="185" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700" letter-spacing="0.5">
+    Microsoft Certified: Azure AI Fundamentals
+  </text>
+  
+  <text x="400" y="212" text-anchor="middle" fill="#38BDF8" font-family="monospace" font-size="15" font-weight="600" letter-spacing="1">
+    EXAM AI-901 / AI-900 • ARTIFICIAL INTELLIGENCE FUNDAMENTALS
+  </text>
+
+  <!-- Awarded to -->
+  <text x="400" y="258" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400" letter-spacing="1">
+    PROUDLY PRESENTED TO
+  </text>
+  
+  <!-- Recipient Name (Shivam) -->
+  <text x="400" y="306" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="800" letter-spacing="2">
+    SHIVAM
+  </text>
+  <line x1="280" y1="318" x2="520" y2="318" stroke="url(#borderGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Subtext / Description -->
+  <text x="400" y="348" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
+    Demonstrating foundational knowledge of Machine Learning, Computer Vision,
+  </text>
+  <text x="400" y="368" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
+    Natural Language Processing, and Azure AI Generative Workloads.
+  </text>
+
+  <!-- Footer Information & Badges -->
+  <!-- Institution -->
+  <g transform="translate(60, 420)">
+    <text x="0" y="0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500" letter-spacing="1">INSTITUTION &amp; PROGRAM</text>
+    <text x="0" y="18" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">Chitkara University (AIEL)</text>
+    <text x="0" y="33" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11">B.Tech CSE - 1st Year Undergrad</text>
+  </g>
+
+  <!-- Gold Seal Emblem Center-Right -->
+  <g transform="translate(400, 435)">
+    <!-- Hexagon Outer -->
+    <polygon points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" fill="#1E293B" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- AI Brain / Sparkle Icon -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#FCD34D" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="3" fill="#FCD34D"/>
+    <!-- Radiating spokes -->
+    <line x1="0" y1="-16" x2="0" y2="-11" stroke="#FCD34D" stroke-width="1.5"/>
+    <line x1="0" y1="16" x2="0" y2="11" stroke="#FCD34D" stroke-width="1.5"/>
+    <line x1="-16" y1="0" x2="-11" y2="0" stroke="#FCD34D" stroke-width="1.5"/>
+    <line x1="16" y1="0" x2="11" y2="0" stroke="#FCD34D" stroke-width="1.5"/>
+  </g>
+
+  <!-- Credential Meta -->
+  <g transform="translate(560, 420)">
+    <text x="175" y="0" text-anchor="end" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500" letter-spacing="1">ISSUED BY &amp; FOCUS</text>
+    <text x="175" y="18" text-anchor="end" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">Microsoft Azure AI</text>
+    <text x="175" y="33" text-anchor="end" fill="#38BDF8" font-family="monospace" font-size="11">ID: MS-AI-901-SHIVAM</text>
+  </g>
+</svg>
