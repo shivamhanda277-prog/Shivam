@@ -1038,25 +1038,30 @@
           <h3>Send a Direct Message</h3>
           <p>Fill out the fields below to initiate a direct conversation with Shivam.</p>
 
-          <form id="contactForm">
+          <form id="contactForm" action="https://formsubmit.co/shivamhanda277@gmail.com" method="POST">
+            <!-- FormSubmit Anti-Spam & Configuration -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Message from Shivam's Website!">
+
             <div class="form-group">
               <label for="formName" class="form-label">Your Name</label>
-              <input type="text" id="formName" class="form-input" placeholder="e.g. Alex Sharma" required>
+              <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. Alex Sharma" required>
             </div>
 
             <div class="form-group">
               <label for="formEmail" class="form-label">Your Email</label>
-              <input type="email" id="formEmail" class="form-input" placeholder="alex@example.com" required>
+              <input type="email" id="formEmail" name="email" class="form-input" placeholder="alex@example.com" required>
             </div>
 
             <div class="form-group">
               <label for="formSubject" class="form-label">Subject</label>
-              <input type="text" id="formSubject" class="form-input" placeholder="Project collaboration / AI-901 Inquiry / Wispr Flow" required>
+              <input type="text" id="formSubject" name="subject" class="form-input" placeholder="Project collaboration / AI-901 Inquiry / Wispr Flow" required>
             </div>
 
             <div class="form-group">
               <label for="formMessage" class="form-label">Message</label>
-              <textarea id="formMessage" class="form-textarea" placeholder="Tell me what you have in mind..." required></textarea>
+              <textarea id="formMessage" name="message" class="form-textarea" placeholder="Tell me what you have in mind..." required></textarea>
             </div>
 
             <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">

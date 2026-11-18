@@ -269,25 +269,62 @@ function initContactActions() {
   });
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
 
       const name = document.getElementById('formName').value;
       const email = document.getElementById('formEmail').value;
       const subject = document.getElementById('formSubject').value || 'Portfolio Inquiry';
       const message = document.getElementById('formMessage').value;
 
-      // Construct mailto link
-      const mailtoLink = `mailto:shivamhanda277@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Shivam,\n\nMy name is ${name} (${email}).\n\n${message}`)}`;
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending message...</span>';
+      }
 
-      // Show toast
-      showToast('🚀 Opening email draft to connect with Shivam!');
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/shivamhanda277@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            _subject: `[Portfolio Inquiry] ${subject} - from ${name}`,
+            message: message,
+            _template: 'table',
+            _captcha: 'false'
+          })
+        });
 
-      setTimeout(() => {
-        window.location.href = mailtoLink;
-      }, 600);
+        const data = await response.json();
 
-      contactForm.reset();
+        if (response.ok || data.success === 'true' || data.success === true) {
+          showToast('✅ Message sent directly to Shivam\'s Gmail!');
+          contactForm.reset();
+        } else {
+          // If first-time activation message or standard confirmation
+          showToast('✅ Message submitted! Check Gmail for notification.');
+          contactForm.reset();
+        }
+      } catch (err) {
+        console.warn('Direct submission error, falling back to mail client:', err);
+        const mailtoLink = `mailto:shivamhanda277@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Shivam,\n\nMy name is ${name} (${email}).\n\n${message}`)}`;
+        showToast('⚠️ Opening email app to complete message...');
+        setTimeout(() => {
+          window.location.href = mailtoLink;
+        }, 500);
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+        }
+      }
     });
   }
 }
