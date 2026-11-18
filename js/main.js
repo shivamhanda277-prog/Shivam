@@ -304,21 +304,19 @@ function initContactActions() {
 
         const data = await response.json();
 
-        if (response.ok || data.success === 'true' || data.success === true) {
+        if (data.success === 'true' || data.success === true) {
           showToast('✅ Message sent directly to Shivam\'s Gmail!');
           contactForm.reset();
+        } else if (data.message && data.message.toLowerCase().includes('activat')) {
+          showToast('📬 Activation email sent! Please click the link in your Gmail once.');
+          contactForm.reset();
         } else {
-          // If first-time activation message or standard confirmation
-          showToast('✅ Message submitted! Check Gmail for notification.');
+          showToast('✅ Message submitted successfully!');
           contactForm.reset();
         }
       } catch (err) {
-        console.warn('Direct submission error, falling back to mail client:', err);
-        const mailtoLink = `mailto:shivamhanda277@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Shivam,\n\nMy name is ${name} (${email}).\n\n${message}`)}`;
-        showToast('⚠️ Opening email app to complete message...');
-        setTimeout(() => {
-          window.location.href = mailtoLink;
-        }, 500);
+        console.warn('Submission error:', err);
+        showToast('⚠️ Submission failed. Please try again or email shivamhanda277@gmail.com.');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
