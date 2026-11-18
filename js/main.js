@@ -312,45 +312,51 @@ function showToast(message) {
 }
 
 /* ==========================================================================
-   8. CERTIFICATE MODAL
+   8. CERTIFICATE MODALS
    ========================================================================== */
 function initCertificateModal() {
-  const modal = document.getElementById('certModal');
-  const openBtns = document.querySelectorAll('[data-open-modal="certModal"]');
-  const closeBtns = document.querySelectorAll('[data-close-modal="certModal"]');
-
-  if (!modal) return;
+  const openBtns = document.querySelectorAll('[data-open-modal]');
+  const closeBtns = document.querySelectorAll('[data-close-modal]');
+  const modals = document.querySelectorAll('.modal-overlay');
 
   openBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden';
+      const modalId = btn.getAttribute('data-open-modal');
+      const targetModal = document.getElementById(modalId);
+      if (targetModal) {
+        targetModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
     });
   });
 
   closeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      closeModal();
+      const modalId = btn.getAttribute('data-close-modal');
+      const targetModal = document.getElementById(modalId);
+      if (targetModal) {
+        targetModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
     });
   });
 
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
+  modals.forEach(m => {
+    m.addEventListener('click', (e) => {
+      if (e.target === m) {
+        m.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
+    if (e.key === 'Escape') {
+      modals.forEach(m => m.classList.remove('active'));
+      document.body.style.overflow = '';
     }
   });
-
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
 }
 
 /* ==========================================================================

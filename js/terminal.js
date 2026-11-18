@@ -40,12 +40,15 @@ Philosophy: "Relentless curiosity + execution = real impact."
 • <span class="term-green">Foundations:</span> Data Structures, Algorithmic Thinking, Computer Architecture
 `,
     cert: () => `
-<div class="term-accent">🏆 Verified Certification:</div>
-Badge: <span class="term-green">Microsoft Certified: Azure AI Fundamentals</span>
-Code: <span class="term-green">Exam AI-901 / AI-900</span>
-Credential ID: <span class="term-green">MS-AI-901-SHIVAM</span>
-Verified Domains: Computer Vision, Natural Language Processing, Conversational AI, Azure ML
-Status: <span class="term-green">Active & Authenticated</span>
+<div class="term-accent">🏆 Verified Industry Certifications:</div>
+1. <span class="term-green">Microsoft Certified: Azure AI Fundamentals</span>
+   • Exam: AI-901 / AI-900 • ID: MS-AI-901-SHIVAM
+   • Focus: Computer Vision, Natural Language Processing, Conversational AI, Azure ML
+
+2. <span class="term-green">Meta Certified: Programming in Python</span>
+   • Issued by: Meta Experts (Coursera) • ID: 0OWX4ZT02B29 (17-Nov-2026)
+   • Verification: <a href="https://coursera.org/verify/0OWX4ZT02B29" target="_blank" class="term-green" style="text-decoration: underline;">coursera.org/verify/0OWX4ZT02B29</a>
+   • Focus: OOP, Data Structures, Automated Unit Testing, Python 3
 `,
     wispr: () => `
 <div class="term-accent">🎙️ Wispr Flow Exploration:</div>

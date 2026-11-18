@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="metaBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="45%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    
+    <!-- Meta Blue Gradient -->
+    <linearGradient id="metaBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0064E0"/>
+      <stop offset="50%" stop-color="#0081FB"/>
+      <stop offset="100%" stop-color="#00C6FF"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="metaBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0081FB"/>
+      <stop offset="40%" stop-color="#6366F1"/>
+      <stop offset="80%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <filter id="metaGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Certificate Card Container -->
+  <rect x="12" y="12" width="776" height="496" rx="20" fill="url(#metaBgGrad)" stroke="url(#metaBorderGrad)" stroke-width="2.5"/>
+  
+  <!-- Inner Delicate Frame -->
+  <rect x="28" y="28" width="744" height="464" rx="14" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Subtle Matrix Pattern -->
+  <g opacity="0.05">
+    <path d="M 40,80 L 760,80 M 40,140 L 760,140 M 40,200 L 760,200 M 40,260 L 760,260 M 40,320 L 760,320 M 40,380 L 760,380 M 40,440 L 760,440" stroke="#0081FB" stroke-width="0.8"/>
+    <path d="M 120,40 L 120,480 M 240,40 L 240,480 M 360,40 L 360,480 M 480,40 L 480,480 M 600,40 L 600,480 M 720,40 L 720,480" stroke="#0081FB" stroke-width="0.8"/>
+  </g>
+
+  <!-- Top Header: Meta Logo & Name -->
+  <g transform="translate(60, 52)">
+    <!-- Meta Infinity Loop Symbol -->
+    <path d="M 28 8 C 22 2 15 2 9 7 C 3 12 1 20 5 26 C 9 32 17 33 24 27 L 38 15 C 44 9 52 8 57 14 C 62 19 61 27 55 31 C 49 35 41 33 36 27" 
+          fill="none" stroke="url(#metaBlueGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="75" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" letter-spacing="0.5">Meta</text>
+  </g>
+
+  <!-- Right Pill: Verified Coursera Credential -->
+  <g transform="translate(560, 50)">
+    <rect x="0" y="0" width="180" height="34" rx="17" fill="rgba(0, 129, 251, 0.12)" stroke="#0081FB" stroke-width="1.2"/>
+    <circle cx="16" cy="17" r="4.5" fill="#0081FB" filter="url(#metaGlow)"/>
+    <text x="30" y="21.5" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">COURSERA VERIFIED</text>
+  </g>
+
+  <!-- Title / Purpose -->
+  <text x="400" y="145" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="500" letter-spacing="3">OFFICIAL COURSE CERTIFICATE</text>
+  
+  <text x="400" y="185" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="800" letter-spacing="0.5">
+    Programming in Python
+  </text>
+  
+  <text x="400" y="214" text-anchor="middle" fill="#38BDF8" font-family="monospace" font-size="14" font-weight="600" letter-spacing="1">
+    AUTHORIZED BY META • OFFERED THROUGH COURSERA
+  </text>
+
+  <!-- Awarded to -->
+  <text x="400" y="260" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400" letter-spacing="1">
+    PROUDLY PRESENTED TO
+  </text>
+  
+  <!-- Recipient Name (Shivam) -->
+  <text x="400" y="306" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="800" letter-spacing="2">
+    SHIVAM
+  </text>
+  <line x1="280" y1="318" x2="520" y2="318" stroke="url(#metaBorderGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Subtext / Description -->
+  <text x="400" y="348" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
+    Demonstrating comprehensive proficiency in Python syntax, data structures,
+  </text>
+  <text x="400" y="368" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
+    object-oriented programming, file handling, and automated unit testing.
+  </text>
+
+  <!-- Footer Information & Badges -->
+  <!-- Institution / Issuer -->
+  <g transform="translate(60, 420)">
+    <text x="0" y="0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500" letter-spacing="1">INSTRUCTOR / ENTITY</text>
+    <text x="0" y="18" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">Meta Staff &amp; Experts</text>
+    <text x="0" y="33" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11">Issue Date: 17-Nov-2026</text>
+  </g>
+
+  <!-- Meta Ribbon Badge Center -->
+  <g transform="translate(400, 435)">
+    <!-- Coursera Style Seal -->
+    <circle cx="0" cy="0" r="26" fill="#1E293B" stroke="url(#metaBlueGrad)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="21" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Python snake monogram or check -->
+    <path d="M -8 -6 L -2 0 L 8 -10" fill="none" stroke="#00C6FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="13" text-anchor="middle" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" font-weight="700">PYTHON</text>
+  </g>
+
+  <!-- Credential Meta -->
+  <g transform="translate(560, 420)">
+    <text x="175" y="0" text-anchor="end" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500" letter-spacing="1">VERIFICATION CODE</text>
+    <text x="175" y="18" text-anchor="end" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600">Coursera Official</text>
+    <text x="175" y="33" text-anchor="end" fill="#38BDF8" font-family="monospace" font-size="11">ID: 0OWX4ZT02B29</text>
+  </g>
+</svg>
